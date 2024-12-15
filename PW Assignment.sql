@@ -105,55 +105,55 @@ SELECT city FROM city WHERE city LIKE 'a%%a' LIMIT 4;
 
 
 /*
-Find all customers whose first name have "NI" in any position.
+16. Find all customers whose first name have "NI" in any position.
 */
 -- Solution:
 SELECT first_name FROM customer WHERE first_name LIKE '%ni%';
 
 
 /*
-Find all customers whose first name have "r" in the second position .
+17. Find all customers whose first name have "r" in the second position .
 */
 -- Solution:
 SELECT first_name FROM customer WHERE first_name LIKE '_r%';
 
 
 /*
-Find all customers whose first name starts with "a" and are at least 5 characters in length.
+18. Find all customers whose first name starts with "a" and are at least 5 characters in length.
 */
 -- Solution:
 SELECT first_name FROM customer WHERE first_name LIKE 'a____%';
 
 /*
-Find all customers whose first name starts with "a" and ends with "o".
+19. Find all customers whose first name starts with "a" and ends with "o".
 */
 -- Solution:
 SELECT first_name FROM customer WHERE first_name LIKE 'a%o';
 
 
 /*
-Get the films with pg and pg-13 rating using IN operator.
+20. Get the films with pg and pg-13 rating using IN operator.
 */
 -- Solution:
 SELECT title FROM film WHERE rating IN ('PG', 'PG-13');
 
 
 /*
-Get the films with length between 50 to 100 using between operator.
+21. Get the films with length between 50 to 100 using between operator.
 */
 -- Solution:
 SELECT * FROM film WHERE length BETWEEN 50 AND 100;
 
 
 /*
-Get the top 50 actors using limit operator.
+22. Get the top 50 actors using limit operator.
 */
 -- Solution:
 SELECT * FROM actor LIMIT 50;
 
 
 /*
-Get the distinct film ids from inventory table.
+23. Get the distinct film ids from inventory table.
 */
 -- Solution:
 SELECT DISTINCT film_id FROM inventory;
